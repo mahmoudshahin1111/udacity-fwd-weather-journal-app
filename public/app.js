@@ -17,6 +17,9 @@ function onGenerateClicked() {
             onDataSended();
             console.log("Data sended successfully");
             updateWeatherInfoUI(savedData.temp,savedData.feel,savedData.date);
+        },error=>{
+            console.log(error);
+            onDataSended();
         });
     })
 }
@@ -30,6 +33,8 @@ function getCurrentWeatherByZip(zip) {
                     resolve(data);
                 })
 
+            },e=>{
+                error(e);
             })
     })
 
