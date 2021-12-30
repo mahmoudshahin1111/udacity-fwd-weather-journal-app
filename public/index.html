@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">    
     <title>Weather Journal App FWD</title>
 </head>
-<body>  
-      <form action="">
+<body class="page">  
+      <form class="weather-form" action="">
           <input type="text" id="zip" name="zip" placeholder="enter zip code here">
           <textarea name="feelings" id="feelings" cols="30" rows="10"></textarea>
-          <button id="generate">Generate</button>
+          <button type="button" id="generate">Generate</button>
       </form>    
       <div id="entryHolder">
         <div id="date"></div>
         <div id="temp"></div>
         <div id="content"></div>
       </div>  
+      <script src="./app.js"></script>
 </body>
 </html>
